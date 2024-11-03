@@ -1,12 +1,16 @@
+import Link from "next/link";
 import { DivBanner } from "../styles";
-import { BannerProps, NavegarParaProps } from "../types";
+import { BannerProps} from "../types";
 
-export default function Banner({fundoUrl, titulo, paragrafo, textoBotao}: BannerProps&NavegarParaProps) {
+export default function Banner({fundoUrl, titulo, paragrafo, textoBotao}: BannerProps) {
     return (
-        <DivBanner imagemFundo={fundoUrl} style={{ backgroundImage: "url('../image/fundo_principal.png')" }}>
+        <DivBanner style={{ backgroundImage: "url('../image/principal.png')" }}>
             <h1>{titulo}</h1>
             <p>{paragrafo}</p>
-            <button>{textoBotao}</button>
+            <Link href={"/diagnostico"}>
+                <button>{textoBotao}</button>
+            </Link>
+            
         </DivBanner>
     )
 }

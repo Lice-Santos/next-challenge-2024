@@ -6,7 +6,7 @@ export default function AreaSelecao3({imagem, texto} : AreaSelecao3Props){
     return(
         <DivAreaSelecao3>
         <p>{texto}</p>
-        <Image src={imagem} height={300} width={500} alt="" />
+        <Image src={imagem} height={600} alt="" />
         </DivAreaSelecao3>
     )
 }

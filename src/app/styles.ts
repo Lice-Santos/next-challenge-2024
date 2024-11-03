@@ -1,6 +1,5 @@
 "use client"
 
-import { DivBannerProps } from "./types";
 import styled from "styled-components";
 export const HeaderCabecalho = styled.header`
     display: flex;
@@ -8,14 +7,12 @@ export const HeaderCabecalho = styled.header`
     
 `
 
-export const DivBanner = styled.div<DivBannerProps>`
+export const DivBanner = styled.div`
     /* @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'); */
-     background-image: ${({ imagemFundo }) =>
-        `linear-gradient(rgba(0, 89, 153, 0.384), rgba(0, 30, 51, 0.37)), url(${imagemFundo})`}; 
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 88.5vw;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -598,12 +595,10 @@ export const SecHistorico = styled.section`
 `
 
 export const DivHistoricoCabec = styled.div`
-background-image: ${({ imagemFundo }) =>
-        `linear-gradient(rgba(0, 89, 153, 0.384), rgba(0, 30, 51, 0.37)), url(${imagemFundo})`};
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 88.5vw;
     height: 50vh;
     min-height: 30vh;
     display: flex;
@@ -1188,13 +1183,11 @@ export const DivAreaSelecao5 = styled.div`
 
 // REVISÃO
 
-export const DivBannerRevisao = styled.div<DivBannerProps>`
-    background-image: ${({ imagemFundo }) =>
-        `linear-gradient(rgba(0, 89, 153, 0.384), rgba(0, 30, 51, 0.37)), url(${imagemFundo})`};
+export const DivBannerRevisao = styled.div`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 88.5%;
     height: 50vh;
     min-height: 30vh;
     display: flex;
@@ -1932,16 +1925,15 @@ export const DivWatson = styled.div`
 `
 
 export const MainDiagnostico = styled.main`
-margin-top: 10vh;
     background-color: white;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 80vh;
     align-items: center;
+    justify-content: center;
 
     h1{
-        margin-top: 10vh;
         font-size: 50px;
         color: #00345A;
     }

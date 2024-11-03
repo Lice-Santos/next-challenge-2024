@@ -2,7 +2,7 @@ import Image from "next/image"
 import { DivAreaSelecao } from "./styles"
 import { AreaSelecaoProps } from "./types"
 
-export default function AreaSelecao1({inicioConteudo, finalConteudo, conteudoMarcado, textoBotao} : AreaSelecaoProps){
+export default function AreaSelecao1({inicioConteudo, finalConteudo, conteudoMarcado, imagem, textoBotao} : AreaSelecaoProps){
 
     return(
         <DivAreaSelecao>
@@ -13,7 +13,7 @@ export default function AreaSelecao1({inicioConteudo, finalConteudo, conteudoMar
                 </div>
                 <button>{textoBotao}</button>
             </div>
-            <Image src={"../public/image/mecanicoInicial.png"} height={300} width={100} alt="texto de funcionalidade" />
+            <Image src={imagem} height={300} alt="texto de funcionalidade" />
         </DivAreaSelecao>
     )
 }

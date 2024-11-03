@@ -8,7 +8,7 @@ export default function Cabecalho({fundoUrl, titulo, paragrafo, textoBotao}: Ban
 
     return (
         <HeaderCabecalho>
-            <Banner  fundoUrl={fundoUrl} titulo={titulo} paragrafo={paragrafo} textoBotao={textoBotao} irPara="/diagnostico"/>
+            <Banner fundoUrl={fundoUrl} titulo={titulo} paragrafo={paragrafo} textoBotao={textoBotao}/>
 
         </HeaderCabecalho>
     )

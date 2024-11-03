@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type BannerProps = {
     fundoUrl?: string;
     titulo: string;
@@ -5,9 +7,6 @@ export type BannerProps = {
     textoBotao: string;
 }
 
-export type DivBannerProps = {
-    imagemFundo: string;
-}
 
 export type CardMembroProps = {
     foto: string;
@@ -74,36 +73,37 @@ export type HistoricoProps = {
 // TYPES HOME
 
 export type OpcoesPrincipalProps = {
-    logo1: string;
-    logo2: string;
-    logo3: string;
+    logo1: StaticImageData;
+    logo2: StaticImageData;
+    logo3: StaticImageData;
 }
 
 export type AreaSelecaoProps = {
     inicioConteudo: string;
     conteudoMarcado: string;
     finalConteudo: string;
+    imagem: StaticImageData;
     textoBotao: string;
 }
 
 export type AreaSelecao3Props = {
-    imagem: string;
+    imagem: StaticImageData;
     texto: string;
 }
 export type AreaSelecao4Props = {
-    imagem: string;
+    imagem: StaticImageData;
     texto: string;
     textoBotao: string;
 }
 export type AreaSelecao5Props = {
     titulo: string;
-    imagem: string;
+    imagem: StaticImageData;
     texto: string;
     textoBotao: string;
 }
 
 export type RevisaoVideoProps = {
-    imagemVideo:string;
+    imagemVideo: StaticImageData;
     descricao:string;
 }
 
@@ -132,8 +132,4 @@ export type ConfirmacaoProps ={
 }
 export type ErroProps ={
     imagem: string;
-}
-
-export type NavegarParaProps = {
-    irPara: string;
 }
