@@ -3,11 +3,11 @@ import { DivAreaSelecao2} from "./styles"
 import { AreaSelecaoProps } from "./types"
 
 
-export default function AreaSelecao2({inicioConteudo, finalConteudo, conteudoMarcado, imagem, irPara} : AreaSelecaoProps){
+export default function AreaSelecao2({inicioConteudo, finalConteudo, conteudoMarcado} : AreaSelecaoProps){
 
     return(
         <DivAreaSelecao2>
-            <Image height={300} width={500} src={imagem} alt="texto de funcionalidade"/>
+            <Image height={300} width={500} src={"../public/image/pranchetaAzul.png"} alt="texto de funcionalidade"/>
             <div className="lado2">
                 <h3>{inicioConteudo}<strong>{conteudoMarcado}</strong></h3>
                 <p>{finalConteudo}</p>

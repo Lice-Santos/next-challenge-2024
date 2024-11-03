@@ -83,9 +83,7 @@ export type AreaSelecaoProps = {
     inicioConteudo: string;
     conteudoMarcado: string;
     finalConteudo: string;
-    imagem: string;
     textoBotao: string;
-    irPara: string;
 }
 
 export type AreaSelecao3Props = {

@@ -1,8 +1,8 @@
 import { FooterRodape } from "../styles";
-import fiap from "../image/fiap.png"
-import porto from "../image/porto.png"
-import oxigenio from "../image/oxigenio.png"
-import ajuda from "../image/duvida.png"
+import fiap from "../../../public/image/fiap.png"
+import porto from "../../../public/image/porto.png"
+import oxigenio from "../../../public/image/oxigenio.png"
+import ajuda from "../../../public/image/duvida.png"
 import Image from "next/image";
 import Link from "next/link";
 
