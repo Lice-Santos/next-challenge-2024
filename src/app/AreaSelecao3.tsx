@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { DivAreaSelecao3 } from "./styles"
 import { AreaSelecao3Props } from "./types"
 
@@ -5,7 +6,7 @@ export default function AreaSelecao3({imagem, texto} : AreaSelecao3Props){
     return(
         <DivAreaSelecao3>
         <p>{texto}</p>
-        <img src={imagem} alt="" />
+        <Image src={imagem} height={300} width={500} alt="" />
         </DivAreaSelecao3>
     )
 }

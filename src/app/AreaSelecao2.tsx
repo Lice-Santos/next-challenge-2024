@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { DivAreaSelecao2} from "./styles"
 import { AreaSelecaoProps } from "./types"
 
@@ -6,7 +7,7 @@ export default function AreaSelecao2({inicioConteudo, finalConteudo, conteudoMar
 
     return(
         <DivAreaSelecao2>
-            <img src={imagem} alt="texto de funcionalidade"/>
+            <Image height={300} width={500} src={imagem} alt="texto de funcionalidade"/>
             <div className="lado2">
                 <h3>{inicioConteudo}<strong>{conteudoMarcado}</strong></h3>
                 <p>{finalConteudo}</p>

@@ -1,14 +1,14 @@
 import Link from "next/link";
 import logo from "../image/logo.png"
 import Image from "next/image";
+import { NavMenu } from "../styles";
 
 export default function Menu() {
 
     return (
-        <nav>
-        {/* // <NavMenu> */}
+        <NavMenu>
             <ul>
-                <li><Image src={logo} alt="" width={500}></Image></li>
+                <li><Image src={logo} alt="" width={100}></Image></li>
                 <div className="lado2">
                     <li><Link href={'/'}><i className="fa-solid fa-house"></i></Link></li>
                     <li><Link href={'/diagnostico'}>Diagnóstico</Link></li>
@@ -18,7 +18,6 @@ export default function Menu() {
                     <li><Link href={'/perfil'}><i className="fa-regular fa-user"></i></Link></li>
                 </div>
             </ul>
-        {/* </NavMenu> */}
-        </nav>
+        </NavMenu>
     )
 }

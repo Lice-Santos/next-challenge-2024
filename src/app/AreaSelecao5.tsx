@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DivAreaSelecao5 } from "./styles";
 import { AreaSelecao5Props } from "./types";
 
@@ -9,7 +10,7 @@ export default function AreaSelecao5({titulo, texto, textoBotao, imagem} : AreaS
                 <p>{texto}</p>
                 <button>{textoBotao}</button>
             </div>
-            <img src={imagem} alt="" />
+            <Image height={300} width={500} src={imagem} alt="" />
         </DivAreaSelecao5>
     )
 }

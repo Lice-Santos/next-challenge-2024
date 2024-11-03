@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import "./globalStyled";
 import Cabecalho from "./Cabecalho";
 import Rodape from "./components/Rodape";
 import Menu from "./components/Menu";

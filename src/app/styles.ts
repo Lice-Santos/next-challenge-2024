@@ -1,5 +1,7 @@
-import { DivBannerProps } from "./types";
+"use client"
 
+import { DivBannerProps } from "./types";
+import styled from "styled-components";
 export const HeaderCabecalho = styled.header`
     display: flex;
     flex-direction: column;
@@ -8,8 +10,8 @@ export const HeaderCabecalho = styled.header`
 
 export const DivBanner = styled.div<DivBannerProps>`
     /* @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'); */
-    background-image: ${({ imagemFundo }) =>
-        `linear-gradient(rgba(0, 89, 153, 0.384), rgba(0, 30, 51, 0.37)), url(${imagemFundo})`};
+     background-image: ${({ imagemFundo }) =>
+        `linear-gradient(rgba(0, 89, 153, 0.384), rgba(0, 30, 51, 0.37)), url(${imagemFundo})`}; 
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;

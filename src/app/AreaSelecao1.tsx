@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { DivAreaSelecao } from "./styles"
 import { AreaSelecaoProps } from "./types"
 
@@ -12,7 +13,7 @@ export default function AreaSelecao1({inicioConteudo, finalConteudo, conteudoMar
                 </div>
                 <button>{textoBotao}</button>
             </div>
-            <img src={imagem} alt="texto de funcionalidade" />
+            <Image src={imagem} height={300} width={100} alt="texto de funcionalidade" />
         </DivAreaSelecao>
     )
 }
