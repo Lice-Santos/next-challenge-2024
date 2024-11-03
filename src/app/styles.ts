@@ -1,6 +1,4 @@
-import styled from "styled-components";
 import { DivBannerProps } from "./types";
-
 
 export const HeaderCabecalho = styled.header`
     display: flex;
