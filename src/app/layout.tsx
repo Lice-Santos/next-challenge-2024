@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globalStyled";
+import GlobalStyles from "./globalStyled"; // Certifique-se de que o caminho está correto
 import Cabecalho from "./Cabecalho";
 import Rodape from "./components/Rodape";
 import Menu from "./components/Menu";
@@ -31,9 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Menu/>
+        <GlobalStyles /> {/* Adicione esta linha */}
+        <Menu />
         {children}
-        <Rodape/>
+        <Rodape />
       </body>
     </html>
   );

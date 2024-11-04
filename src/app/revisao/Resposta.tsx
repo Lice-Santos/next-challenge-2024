@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import LaudoRevisao from "./LaudoRevisao";
 import { DialogResp } from "../styles";
 import { RespostaProps } from "../types";
+import Image from "next/image";
 
 export default function Resposta({ dialogRef, problemaProps, onClose }: RespostaProps) {
     useEffect(() => {
@@ -13,7 +14,7 @@ export default function Resposta({ dialogRef, problemaProps, onClose }: Resposta
     return (
         <DialogResp ref={dialogRef}>
             <div className="container">
-                <img src="../../public/faseFimRevisao.png" alt="" />
+                <Image width={100} height={300} src="/image/faseFimRevisao.png" alt="" />
                 <h2>Revisão finalizada com sucesso!</h2>
                 <p>Veja os problemas identificados:</p>
                 <ul>

@@ -12,7 +12,9 @@ export default function Dica(){
                     <p className="topico"><span>3</span>Responda todas as perguntas que aparecerem na tela</p>
                     <p className="topico"><span>4</span>Veja seu resultado!</p>
                 </div>
+            <div className="container2">
                 <Image height={400} width={200} src="/image/maoSegurando.png" alt="" />
+            </div>
             </div>
         </DivDicaRevisao>
     )

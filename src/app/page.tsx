@@ -15,6 +15,7 @@ import imgHistorico from "../../public/image/historico.png";
 import mecanico from "../../public/image/mecanicoInicial.png";
 import pranchetaAzul from "../../public/image/pranchetaAzul.png";
 import revisaoIniciar from "../../public/image/revisaoInicial.png"
+import principal from "../../public/image/principal.png";
 import oficina from "../../public/image/acharOficina.png";
 import historicoInicial from "../../public/image/historicoInicial.png"
 
@@ -22,7 +23,7 @@ export default function Home() {
     
     return (
         <>
-            <Cabecalho fundoUrl="/principal.png" titulo="DIAGNÓSTICO" paragrafo="Descubra o problema do seu veículo" textoBotao="INICIAR DIAGNOSTICO"/>
+            <Cabecalho titulo="DIAGNÓSTICO" paragrafo="Descubra o problema do seu veículo" textoBotao="INICIAR DIAGNOSTICO"/>
             <MainPags>
             <OpcoesHome1 logo1={imgDiagnostico} logo2={imgRevisao} logo3={imgHistorico}></OpcoesHome1>
             <AreaSelecao1 imagem={mecanico} inicioConteudo="Aqui na " conteudoMarcado="TRIA" finalConteudo="Te ajudar é a nossa maior satisfação."  textoBotao="SAIBA MAIS SOBRE NÓS"/>      

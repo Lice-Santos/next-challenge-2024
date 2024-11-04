@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { DialogPerguntas } from "../styles";
 import { formRevisao } from "../types";
+import Image from "next/image";
 
 export default function PaginaPergunta({ orientacao, pergunta, onSim, onNao, btnSair, dialogRef } : formRevisao) {
     useEffect(() => {
@@ -27,10 +28,10 @@ export default function PaginaPergunta({ orientacao, pergunta, onSim, onNao, btn
     return (
         <DialogPerguntas ref={dialogRef} className="forms" >
             <div id="divSair">
-                <button id="sair" onClick={btnSair} className="btnSair"><img src="../../public/fechar.png" alt="" /></button> 
+                <button id="sair" onClick={btnSair} className="btnSair"><Image width={50} height={50} src="/image/fechar.png" alt="" /></button> 
             </div>
             <div className="container">
-                <img src="../../public/fase1Revisao.png" alt="" />
+                <Image width={150} height={300} src="/image/fase1Revisao.png" alt="" />
                 <h2>{orientacao}</h2>
                 <p>{pergunta}</p>
                     <button id="sim" onClick={onSim} className="btn">SIM</button>

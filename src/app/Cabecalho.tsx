@@ -4,11 +4,11 @@ import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 
 
-export default function Cabecalho({fundoUrl, titulo, paragrafo, textoBotao}: BannerProps) {
+export default function Cabecalho({titulo, paragrafo, textoBotao}: BannerProps) {
 
     return (
         <HeaderCabecalho>
-            <Banner fundoUrl={fundoUrl} titulo={titulo} paragrafo={paragrafo} textoBotao={textoBotao}/>
+            <Banner titulo={titulo} paragrafo={paragrafo} textoBotao={textoBotao}/>
 
         </HeaderCabecalho>
     )

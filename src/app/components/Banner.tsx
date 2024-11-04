@@ -2,7 +2,7 @@ import Link from "next/link";
 import { DivBanner } from "../styles";
 import { BannerProps} from "../types";
 
-export default function Banner({fundoUrl, titulo, paragrafo, textoBotao}: BannerProps) {
+export default function Banner({titulo, paragrafo, textoBotao}: BannerProps) {
     return (
         <DivBanner style={{ backgroundImage: "url('../image/principal.png')" }}>
             <h1>{titulo}</h1>

@@ -12,7 +12,7 @@ export const DivBanner = styled.div`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 88.5vw;
+    width: 99vw;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -598,7 +598,7 @@ export const DivHistoricoCabec = styled.div`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 88.5vw;
+    width: 99vw;
     height: 50vh;
     min-height: 30vh;
     display: flex;
@@ -736,9 +736,11 @@ export const FooterRodape = styled.footer`
     }
 
     @media screen and (max-width: 900px) {
+    height: 30vh;
     .parcerias {
         img {
-            width: 140px;
+            height: 50px;
+            width: auto;
         }
     }
 
@@ -750,6 +752,7 @@ export const FooterRodape = styled.footer`
 
         img {
             width: 20px;
+            height: auto;
         }
 
         p {
@@ -778,6 +781,7 @@ export const DivOpcoes1 = styled.div`
     justify-content: center;
     margin-bottom: 40px;
     background-color: #f6f6f8;
+    flex-wrap: wrap;
     .container{
         display: flex;
         width: 100%;
@@ -841,28 +845,49 @@ export const DivOpcoes1 = styled.div`
         cursor: pointer;
     }
     @media screen and (max-width: 1080px) {
+        h2{
+        font-size: 40px;
+        margin: 8vh;
+        }
         .itemOpcao{
-            margin: 70px;
+            margin: 50px;
             padding: 30px;
-            height: 310px;
-            width: 210px;
+            height: 370px;
+            width: 250px;
         }
     }
     @media screen and (max-width: 850px) {
+        .container{
+            flex-direction: column;
+        }
         h2{
-            font-size: 35px;
+        font-size: 30px;
+        margin: 8vh;
+        }
+        .itemOpcao{
+            margin: 20px;
+            padding: 30px;
+            height: 190px;
+            width: 270px;
         }
         img{
-            height: 100px;
-            width: 100px;
-            margin-left: 20px;
-            margin-right: 20px;
+            height: 60px;
+            width: 60px;
+        }
+        p{
+            font-size: 15px;
+        }
+        h3{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
         }
     }
 
 `
 
 export const DivAreaSelecao = styled.div`
+    height: 80vh;
     display: flex;
     background-color: #ffffff;
     padding: 1em;
@@ -926,6 +951,7 @@ export const DivAreaSelecao = styled.div`
     }
 
     @media screen and (max-width: 1080px) {
+        height: 50vh;
         .lado1{
             padding-left: 10%;
         }
@@ -938,27 +964,41 @@ export const DivAreaSelecao = styled.div`
             width: 250px;
             margin-left: 25px;
             margin-right: 25px;
+            
         }
+        
     }
 
     @media screen and (max-width: 850px) {
+        
+        .linha{
+            padding: 20px;
+        }
         .lado1{
-            padding-left: 8%;
+            padding-left: 5%;
         }
         h3 {
-            font-size: 20px;
+            font-size: 23px;
         }
 
         p {
-            font-size: 10px;
+            font-size: 18px;
         }
 
         img{
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
             margin-left: 20px;
             margin-right: 20px;
         }
+        button{
+
+        height: 40px;
+        width: 100%;
+        padding: 12px;
+        margin-top: 5vh;
+    }
+
     }
 `
 
@@ -971,7 +1011,7 @@ export const DivAreaSelecao2 = styled.div`
     margin-top: 3%;
     margin-bottom: 3%;
     background-color: #f6f6f8;
-
+    height: 80vh;
 
     button{
         display: flex;
@@ -1042,46 +1082,60 @@ export const DivAreaSelecao2 = styled.div`
 
     @media screen and (max-width: 1080px) {
         .lado2{
-            padding-right: 10%;
+            padding-right: 2%;
         }
         h3 {
             font-size: 25px;
         }
-
-        img{
-            height: 250px;
-            width: 250px;
-            margin-left: 25px;
-            margin-right: 25px;
+        p{
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .topico{
+            font-size: 18px;
+            margin-top: 30px;
         }
     }
 
     @media screen and (max-width: 850px) {
         .lado2{
-            padding-right: 8%;
+            width: 80vw;
         }
         h3 {
-            font-size: 20px;
+            font-size: 23px;
         }
+        p{
+            font-size: 18px;
+            margin-top: 10px;
+            width: 80%;
 
-        p {
-            font-size: 10px;
         }
-
+        .topico{
+            font-size: 14px;
+            margin-top: 25px;
+        }
         img{
             height: 200px;
             width: 200px;
+            padding: 30px;
+            margin: 5px;
             margin-left: 20px;
-            margin-right: 20px;
+
         }
     }
 `
 
 export const DivAreaSelecao3 = styled.div`
 
+    display: flex;
+    height: 80vh;
+
     position: relative;
     img{
+        height: 100%;
         width: 100%;
+        overflow: hidden;
+
     }
 
     p{
@@ -1089,8 +1143,31 @@ export const DivAreaSelecao3 = styled.div`
         position: absolute;
         font-size: 35px;
         padding-right: 50%;
+        justify-content: center;
         padding-left: 7%;
         color: #051e67;
+    }
+
+    @media screen and (max-width: 1080px) {
+        height: 80vh;
+        p{
+        display: flex;
+        top: 50%;
+        font-size: 25px;
+        padding-right: 50%;
+        padding-left: 5%;
+    }
+    }
+
+    @media screen and (max-width: 850px) {
+        height: 50vh;
+        p{
+        top: 30%;
+        font-size: 25px;
+        padding-right: 45%;
+        padding-left: 7%;
+    }
+
     }
 `
 
@@ -1102,6 +1179,7 @@ export const DivAreaSelecao4 = styled.div`
     background-color: #ffffff;
     padding-top: 6%;
     padding-bottom: 6%;
+    height: 80vh;
     .lado2{
         display: flex;
         flex-direction: column;
@@ -1139,6 +1217,34 @@ export const DivAreaSelecao4 = styled.div`
         cursor: pointer;
         background-color: #fcfcfc;
     }
+
+    @media screen and (max-width: 1080px) {
+        img{
+            width: 30%;
+        }
+        p{
+            padding: 4%;
+            padding-left: 20%;
+            font-size: 30px;
+        }
+
+    }
+
+    @media screen and (max-width: 850px) {
+        height: 50vh;
+        img{
+            height: 200px;
+        }
+        p{
+        padding: 3%;
+        padding-left: 15%;
+        font-size: 23px;
+    }
+    .lado2{
+        width: 40%;
+    }
+
+    }
 `
 
 export const DivAreaSelecao5 = styled.div`
@@ -1147,6 +1253,7 @@ export const DivAreaSelecao5 = styled.div`
     justify-content: center;
     background-color: #f6f6f8;
     padding: 5%;
+    height: 80vh;
 
     img{
         width: 300px;
@@ -1179,6 +1286,30 @@ export const DivAreaSelecao5 = styled.div`
         cursor: pointer;
         background-color: #fcfcfc;
     }
+    @media screen and (max-width: 1080px) {
+        img{
+          width: 250px;
+          height: 250px;
+          }
+        p{
+            font-size: 25px;   
+            width: 70%;
+        }
+
+    }
+
+    @media screen and (max-width: 850px) {
+        height: 50vh;
+        img{
+          width: 200px;
+          height: 200px;
+          }
+        p{
+            font-size: 20px;   
+            width: 88%;
+        }
+
+    }
 `
 
 // REVISÃO
@@ -1187,7 +1318,7 @@ export const DivBannerRevisao = styled.div`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 88.5%;
+    width: 99vw;
     height: 50vh;
     min-height: 30vh;
     display: flex;
@@ -1304,43 +1435,55 @@ export const DivInicioRevisao = styled.div`
         width: 40vw;
     }
 
-    @media screen and (max-width: 1200px) {
-        h2 {        
-            padding-left: 23vw;
-            padding-right: 23vw;
-        }
-
-    }
     @media screen and (max-width: 1080px) {
-        h2 {
-            font-size: 28px;
+        img{
+            height: 300px;
+            width: auto;
         }
 
-        button{
-            width: 220px;
-            padding: 15px;
-            margin-top: 6vh;
+        .lado2{
+            padding: 30px;
+            align-items: center;
+        h2{
+            font-size: 25px;
+            width: 70%;
+            text-align: right;
+
+            strong{
+                color: #8DD1F1;
+            }
         }
-        a{
-            font-size: 10px;
-            margin: 7px;
+
+        p{
+            font-size: 22px;
+            width: 70%;
+            margin-top: 8vh;
+        }
+
         }
     }
-    @media screen and (max-width: 780px) {
-        h2 {
-            font-size: 28px;
-            padding-left: 15vw;
-            padding-right: 15vw;
+    @media screen and (max-width: 880px) {
+        img{
+            height: 150px;
+            width: auto;
         }
 
-        button{
-            width: 200px;
-            padding: 15px;
-            margin-top: 6vh;
+        .lado2{
+            padding: 10px;
+            align-items: center;
+        h2{
+            font-size: 20px;
+            width: 50%;
+            text-align: right;
+
         }
-        a{
-            font-size: 10px;
-            margin: 7px;
+
+        p{
+            font-size: 15px;
+            width: 70%;
+            margin-top: 3vh;
+        }
+
         }
     }
 
@@ -1360,6 +1503,11 @@ export const DivDicaRevisao = styled.div`
         text-decoration: dashed;
     }
 
+    .container2{
+        display: flex;
+        align-items: end;
+        height: 70vh;
+    }
     .container{
         display: flex;
         align-items: center;
@@ -1388,6 +1536,46 @@ export const DivDicaRevisao = styled.div`
             }
         }
     }
+    @media screen and (max-width: 1080px) {
+        h3{
+        margin-top: 8vh;
+        font-size: 25px;
+        }
+
+        .container2{
+            img{
+                height: 300px;
+            }
+        }
+        .topicos{
+            padding-left: 7vw;
+            .topico{
+                margin-top: 40px;
+                font-size: 20px;
+                width: 60%;
+            }
+        }
+    }
+    @media screen and (max-width: 880px) {
+        h3{
+        margin-top: 5vh;
+        font-size: 22px;
+        }
+
+        .container2{
+            img{
+                height: 270px;
+            }
+        }
+        .topicos{
+            padding-left: 5vw;
+            .topico{
+                margin-top: 30px;
+                font-size: 15px;
+                width: 80%;
+            }
+        }
+    }
 
 `
 
@@ -1397,7 +1585,7 @@ export const DivVideoRevisao = styled.div`
     background-color: #051e67;
     align-items: center;
     padding: 5%;
-    height: 70vh;
+    height: 100%;
     
     .videos{
         display: flex;
@@ -1448,6 +1636,29 @@ export const DivCardVideo = styled.dialog`
     button:hover{
         background-color: #e9e7e7;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 1080px) {
+        height: 230px;
+        width: 210px;
+        img{
+            width: 220px;
+        }
+        p{
+            padding:15px;
+            font-size: 18px;
+         }
+    }
+    @media screen and (max-width: 880px) {
+        height: 210px;
+        width: 200px;
+        img{
+            width: 200px;
+        }
+        p{
+            padding:10px;
+            font-size: 15px;
+         }
     }
 
 `
@@ -1941,6 +2152,27 @@ export const MainDiagnostico = styled.main`
         margin: 3vh;
         color: #0094FF;
         font-size: 25px;
+    }
+    @media screen and (max-width: 1080px) {
+        height: 70vh;
+        h1{
+            font-size: 40px;
+        }
+    p{
+        margin: 3vh;
+        font-size: 22px;
+    }
+    }
+    
+    @media screen and (max-width: 780px) {
+        height: 50vh;
+        h1{
+            font-size: 30px;
+        }
+        p{
+            margin: 3vh;
+            font-size: 15px;
+        }
     }
     
 `

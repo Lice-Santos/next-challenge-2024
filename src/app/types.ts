@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
 
 export type BannerProps = {
-    fundoUrl?: string;
     titulo: string;
     paragrafo?: string;
     textoBotao: string;
