@@ -705,7 +705,7 @@ export const FooterRodape = styled.footer`
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-top: 10vh;
+
 
     .parcerias {
         img {

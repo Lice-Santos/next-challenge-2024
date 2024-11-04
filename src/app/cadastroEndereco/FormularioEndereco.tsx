@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Endereco } from "../types";
 import { SecFormCadastro } from "../styles";
+import { redirect } from "next/navigation";
 
 
 export default function FormularioEndereco() {
@@ -10,10 +10,10 @@ export default function FormularioEndereco() {
     const [address, setAddress] = useState<Endereco | null>(null);
     const [error, setError] = useState('');
     
-    const navigate = useNavigate();
 
-    const finalizar = () =>{
-        navigate('/cadastro/carro')
+    const finalizar = (e: React.MouseEvent<HTMLButtonElement>) =>{
+        e.preventDefault(); // Evita o reload da página
+        redirect('/cadastroCarro')
     }
 
     // Função para buscar o endereço a partir do CEP

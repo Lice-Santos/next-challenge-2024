@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GlobalStyles /> {/* Adicione esta linha */}
+        <GlobalStyles />
         <Menu />
         {children}
         <Rodape />

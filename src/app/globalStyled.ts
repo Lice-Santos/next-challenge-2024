@@ -15,11 +15,14 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
     }
 
-    #root {
-        width: 100%;
-        min-height: 100vh;
+    body {
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex-grow: 1;
     }
     
 `

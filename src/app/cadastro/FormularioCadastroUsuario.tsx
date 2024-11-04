@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useRouter } from "next/router"; // Altere a importação
 import { FormularioUsuarioProps } from "../types";
 import { SecFormCadastro } from "../styles";
+import { redirect } from "next/navigation";
 
 export default function FormularioCadastroUsuario() {
     const [formState, setFormState] = useState<FormularioUsuarioProps>({
@@ -13,7 +14,6 @@ export default function FormularioCadastroUsuario() {
         telefone: "",
     });
 
-    const router = useRouter(); // Altere para usar useRouter
 
     const handleSubmit = useCallback(
         (evento: React.FormEvent<HTMLFormElement>) => {
@@ -26,9 +26,9 @@ export default function FormularioCadastroUsuario() {
                 return;
             }
 
-            router.push('/cadastro/endereco'); // Altere para usar router.push
+            redirect('cadastroEndereco')
         },
-        [formState, router] // Adicione router às dependências
+        [formState] // Adicione router às dependências
     );
 
     const handleChangeInput = useCallback(

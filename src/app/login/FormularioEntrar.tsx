@@ -2,6 +2,7 @@ import { useCallback, useState } from "react"
 import { FormularioProps } from "../types";
 import { SecFormLogin } from "../styles";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 export default function Formulario() {
 
     const [formState, setFormState] = useState<FormularioProps>({
@@ -21,7 +22,7 @@ export default function Formulario() {
                 return;
             }
 
-            // navigate('/')
+            redirect('/')
         },
         [formState]
     );

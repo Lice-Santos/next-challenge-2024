@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
-
 import { useCallback, useState } from "react";
 import { FormularioCarroProps } from "../types";
 import { SecFormCadastro } from "../styles";
-
+import { redirect } from "next/navigation";
 
 export default function FormularioCadastroCarro() {
 
@@ -11,11 +9,9 @@ export default function FormularioCadastroCarro() {
         placa: "",
         marca: "",
         modelo: "",
-        ano: NaN,
-        quilometragem: NaN
+        ano: 0,
+        quilometragem: 0
     });
-
-    const navigate = useNavigate();
 
     const handleSubmit = useCallback(
         (evento: React.FormEvent<HTMLFormElement>) => {
@@ -24,31 +20,29 @@ export default function FormularioCadastroCarro() {
             const {placa, marca, modelo, ano, quilometragem} = formState;
 
             if (!placa || !marca || !modelo || !ano || !quilometragem){
-                window.alert("Preencha todos so campos")
+                window.alert("Preencha todos os campos");
                 return;
             }
 
-            navigate('/')
+            redirect('/');
         },
         [formState]
     );
 
     const handleChangeInput = useCallback(
         (evento: React.FormEvent<HTMLInputElement>) => {
-
             const targetInput = evento.currentTarget;
-            const {value, name, type, checked} = targetInput;
+            const { value, name, type, checked } = targetInput;
 
-            const finalValue = type === "checkbox" ? checked: value
+            const finalValue = type === "checkbox" ? checked : value;
 
             setFormState({
                 ...formState,
                 [name]: finalValue,
             });
-
         },
         [formState]
-    )
+    );
 
     return (
         <SecFormCadastro>
@@ -94,7 +88,7 @@ export default function FormularioCadastroCarro() {
                         id="ano"
                         name="ano"
                         required
-                        value={formState.ano}
+                        value={formState.ano || ""}
                         onChange={handleChangeInput}
                     /> 
                 </div>
@@ -105,7 +99,7 @@ export default function FormularioCadastroCarro() {
                         id="quilometragem"
                         name="quilometragem"
                         required
-                        value={formState.quilometragem}
+                        value={formState.quilometragem || ""}
                         onChange={handleChangeInput}
                     /> 
                 </div>
