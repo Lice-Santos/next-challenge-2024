@@ -15,7 +15,7 @@ export default function AbaDiagnostico(){
         redirect: 'follow',
       };
   
-      fetch('/api/cors/diagnosticos', requestOptions)
+      fetch('https://54g4dpwzph.execute-api.us-east-2.amazonaws.com/cors/diagnosticos', requestOptions)
         .then((response) => response.json()) // Supondo que a resposta seja JSON
         .then((result) => {
           // Verifica se a resposta contém o array de diagnósticos
@@ -24,7 +24,7 @@ export default function AbaDiagnostico(){
             setDataList(result.diagnosticos);
           }
         })
-        .catch((error) => console.error('Erro ao buscar dados:', error));
+        .catch((error) => console.log('Erro ao buscar dados:', error));
     };
   
     // Usa o useEffect para fazer a requisição quando o componente for montado
